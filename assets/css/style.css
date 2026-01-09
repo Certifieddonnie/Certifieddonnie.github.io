@@ -20,13 +20,49 @@
   height: auto;
 }
 
+/* Accessibility & motion improvements */
+.skip-link{
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip-link:focus, .skip-link:active{
+  left: 10px;
+  top: 10px;
+  width: auto;
+  height: auto;
+  background: #004d40;
+  color: white;
+  padding: 8px 12px;
+  z-index: 9999;
+  border-radius: 4px;
+}
+
+/* Focus visible */
+:focus{outline:none}
+:focus-visible{outline:3px solid #004d40; outline-offset:3px}
+
+/* Reveals */
+.reveal{opacity:0; transform:translateY(20px); transition:opacity .6s ease, transform .6s ease; will-change:opacity, transform}
+.reveal.in{opacity:1; transform:none}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{animation:none !important; transition:none !important; scroll-behavior:auto !important}
+  .reveal{opacity:1; transform:none}
+  .skip-link{left:10px; top:10px}
+}
+
 .tracker {
   /* visibility: hidden; */
   position: fixed;
   /* margin-inline-end: auto;  */
   bottom: 0; 
   right: 0;
-}
+} 
 
 @import url(https://fonts.googleapis.com/css?family=Poiret+One);
 .social {
@@ -48,7 +84,8 @@
   border-radius: 45px;
   display: inline-block;
   margin: 4px;
-}
+  transition: transform .12s ease, box-shadow .12s ease;
+} 
 
 .github {
   color: black;
@@ -93,7 +130,8 @@
   display: inline-block;
   border-radius: 5px;
   -webkit-border-radius: 5px;
-}
+  transition: transform .15s ease, background .15s ease, color .15s ease;
+} 
 
 /* .readme:hover{
   color: white;
@@ -113,7 +151,8 @@
   margin-top: 1.5em;
   border-radius: 5px;
   -webkit-border-radius: 5px;
-}
+  transition: transform .15s ease, background .15s ease, color .15s ease;
+} 
 
 .contactme:hover{
   color: #00796b;
