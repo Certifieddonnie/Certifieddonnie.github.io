@@ -17,6 +17,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <!-- Materialize - Compiled and minified CSS-->
@@ -125,7 +126,18 @@
         <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-school small"></i><span>Education</span></a>
       </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Leadership section" href="#leadership" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-group small"></i><span>Leadership</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Certifications section" href="#certifications" class="waves-effect waves-dark teal-text"><i class="mdi-action-assignment-turned-in small"></i><span>Certifications</span></a>
+      </li>
 
+      <li class="bold">
+        <a aria-label="Navigate to the Writing section" href="#writing" class="waves-effect waves-dark teal-text"><i
+            class="mdi-editor-mode-edit small"></i><span>Writing</span></a>
+      </li>
       <li class="bold">
         <!-- 
         1. mdi-communication-contacts
@@ -167,6 +179,12 @@
   <!-- Nav class 3 -->
   <nav class="hide-on-large only">
     <ul id="slide-out" class="side-nav">
+      <li class="logo">
+        <a id="logo-container-mobile" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="grey-blue-text">
+          <img loading="lazy" src="/assets/img/passport-new.jpeg" class="circle img-responsive profile-pic" alt="avatar">
+        </a>
+      </li>
       <li class="bold">
         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
@@ -188,6 +206,17 @@
       <li class="bold">
         <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-school small"></i><span>Education</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Leadership section" href="#leadership" class="waves-effect waves-dark teal-text"><i
+          class="mdi-social-group small"></i><span>Leadership</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Certifications section" href="#certifications" class="waves-effect waves-dark teal-text"><i class="mdi-action-assignment-turned-in small"></i><span>Certifications</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Writing section" href="#writing" class="waves-effect waves-dark teal-text"><i
+            class="mdi-editor-mode-edit small"></i><span>Writing</span></a>
       </li>
       <li class="bold">
         <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
@@ -212,8 +241,7 @@
             <div class="caption">
               <h2>Hi, I'm <span class="teal">McDonald Amure.</span></h2>
               <h5 style="color:#fff"><span class="typing" tabindex="0" aria-live="polite" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-Motivated, an Explorer, passionate programmer who enjoys solving real world problems and codes</h5>
+              <h5>A self-motivated explorer and passionate programmer dedicated to solving complex, real-world problems with elegant code.</h5>
             </div>
             <div class="social">
               <a href="https://linkedin.com/in/mcdonald-amure" target="_blank">
@@ -250,22 +278,16 @@
       <h3 class="page-title reveal">About Me</h3>
       <div class="container flow-text">
         <p class="reveal">
-          As a Software Engineer and a Mathematics undergraduate from the University of Lagos, I possess a strong foundation in logic and problem-solving. My training at ALX has equipped me with the practical skills to build and deploy full-stack applications.
+          I am a results-driven Software Engineer with a strong foundation in mathematics and a passion for solving complex problems with elegant code. My journey through the rigorous ALX Software Engineering program has equipped me with mastery over the full software lifecycle—from low-level C programming to modern web technologies and architectural integrations.
         </p>
         <p class="reveal">
-          I have 2+ years of experience working with Python, Django, Flask, MySQL, MongoDB, HTML5, CSS, C, JavaScript, and NodeJS. I have strengthened my experience in Python, Flask, and Django through both my time at ALX and various personal projects. I am passionate about developing simple yet complex applications that solve real-world problems and can impact millions of users.
+          My expertise lies in backend architecture, where I design, deploy, and maintain robust applications using a broad tech stack that includes Python, Django, FastAPI, Node.js, and various databases like PostgreSQL and MongoDB. I thrive on building practical solutions, with a portfolio that includes an AirBnB clone, The Afrikan Dataset API, and contributions to open-source projects.
         </p>
         <p class="reveal">
-          <ul>
-            <li><b>Languages:</b> Python, JavaScript, C, HTML/CSS, Bash, TypeScript</li>
-            <li><b>Databases:</b> MySQL, MongoDB, Postgres</li>
-            <li><b>Frameworks & Libraries:</b> Flask, Django, Node.js, FastAPI, Pandas, OpenCV, Bootstrap</li>
-            <li><b>Tools & Technologies:</b> Git, Docker, AWS, Heroku</li>
-          </ul>
-          
+          Beyond my technical skills, I am a proven leader. During my time at the University of Lagos, I served as Vice President for the Department of Mathematics, where I spearheaded major academic initiatives and mentored peers. I am also passionate about giving back to the tech community, having organized and tutored a backend development program.
         </p>
         <p class="reveal">
-          I am actively seeking opportunities to contribute my skills in a challenging software engineering role that fosters professional growth and allows me to work on impactful projects.
+          I am a lifelong learner, constantly expanding my skills into areas like mobile development with Flutter and blockchain with Solidity. I believe in a balanced life, proudly representing my department in volleyball. I am actively seeking a role where I can leverage my diverse skills to contribute to innovative projects and continue my growth as an engineer.
         </p>
       </div>
     </section>
@@ -275,6 +297,38 @@
     <section id="experience" class="section scrollspy">
       <h3 class="page-title reveal">Experience</h3>
       <div class="container">
+
+        <!-- Latest Experience: Varsigram -->
+        <div class="card reveal">
+          <div class="card-content">
+            <div class="row">
+              <div class="col s12 m2">
+                <a href="https://play.google.com/store/apps/details?id=com.varsigram.app" target="_blank"><img loading="lazy" alt="Varsigram logo"
+                    src="/assets/img/vasigram.png" class="responsive-img center-block" /></a>
+              </div>
+              <div class="col s12 m10">
+                <p>
+                  <span class="card-title"><a href="https://play.google.com/store/apps/details?id=com.varsigram.app" target="_blank"
+                      class="teal-text hoverline">Varsigram</a></span>
+                </p>
+              </div>
+            </div>
+            <div class="role brown-text text-darken-2">Project Lead Developer</div>
+            <ul>
+              <li>Leading the development of a student-centric digital campus platform designed to unify university life.</li>
+              <li>Overseeing the architecture and implementation of features for verified announcements, virtual classrooms, and academic resource sharing.</li>
+              <li>Managing the project lifecycle, from concept and pitching—securing 1st runner-up at the UNILAG Colloquium 2025 Business Pitch Competition—to deployment and maintenance.</li>
+              <li>
+                <b>Tools:</b> Backend Development, Incharge of the DevOps 
+
+Oversees other Developers
+              </li>
+            </ul>
+          </div>
+          <div class="card-action">
+            <span>Dec 2023 - Present | Hybrid</span>
+          </div>
+        </div>
 
         <!-- Latest Experience -->
         <div class="card reveal">
@@ -294,17 +348,12 @@
             </div>
             <div class="role brown-text text-darken-2">Software Engineering Student</div>
             <ul>
-              <li>
-                A 12 months Software Engineering Program.
-              </li>
-              <li>
-                Tracked software and website development from initial inception through full lifecycle launches.
-              </li>
-              <li>Developed functional databases and applications to support solution backend operations.</li>
-              <li>Integrated RESTful services and third-party APIs into legacy products and new solutions.</li>
-              <li>Oversaw testing and deployment of data-driven changes to front-end UI and backend service customizations.</li>
-              <li>Produced code in programming languages such as Python and JavaScript to create the most effective and clean websites.</li>
-              <li>Continuously studied and improved abilities with wide range of web technologies, design tools and programming practices.</li>
+              <li>Completed an intensive 12-month software engineering program focused on full-stack development and computer science fundamentals.</li>
+              <li>Engineered and deployed full-stack web applications, managing the entire development lifecycle from conception to launch.</li>
+              <li>Architected and implemented functional databases and RESTful APIs to power backend operations.</li>
+              <li>Integrated diverse third-party services and APIs into new and existing solutions.</li>
+              <li>Oversaw comprehensive testing and deployment of new features and service customizations.</li>
+              <li>Authored clean, maintainable code in Python and JavaScript, adhering to industry best practices and design patterns.</li>
               <li>
                 <b>Tools:</b> Python, Flask, MongoDB, MySQL, JavaScript, TypeScript, C, Shell, RedisDB, Git
               </li>
@@ -397,7 +446,7 @@
             </ul>
           </div>
           <div class="card-action">
-            <span>June 2023 - Current | Remote</span>
+            <span>June 2023 - August 2023 | Remote</span>
           </div>
         </div>
 
@@ -569,6 +618,12 @@
               <div class="col s4 m2">
                 <img alt="" src="/assets/img/c.png" class="responsive-img" />C
               </div>
+              <div class="col s4 m2">
+                <img alt="PostgreSQL" src="/assets/img/postgresql.png" class="responsive-img" />PostgreSQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="MongoDB" src="/assets/img/mongodb.png" class="responsive-img" />MongoDB
+              </div>
             </div>
           </div>
         </div>
@@ -604,6 +659,9 @@
               <div class="col s4 m2">
                 <img alt="" src="/assets/img/nodejs.png" class="responsive-img" />Node JS
               </div>
+              <div class="col s4 m2">
+                <img alt="FastAPI" src="/assets/img/fastapi.png" class="responsive-img" />FastAPI
+              </div>
             </div>
           </div>
         </div>
@@ -613,13 +671,20 @@
           <div class="card-content">
             <h4 class="brown-text light reveal">Other</h4>
             <div class="row text-center">
-
-
               <div class="col s4 m2">
                 <img alt="" src="/assets/img/git.png" class="responsive-img" />Git
               </div>
               <div class="col s4 m2">
                 <img alt="" src="/assets/img/aws.png" class="responsive-img" />AWS
+              </div>
+              <div class="col s4 m2">
+                <img alt="Redis" src="/assets/img/Redis.png" class="responsive-img" />Redis
+              </div>
+              <div class="col s4 m2">
+                <img alt="Nginx" src="/assets/img/NGINX.png" class="responsive-img" />Nginx
+              </div>
+              <div class="col s4 m2">
+                <img alt="Firebase" src="/assets/img/firebase.png" class="responsive-img" />Firebase
               </div>
             </div>
           </div>
@@ -643,16 +708,6 @@
                 <p>
                   <b>Degree: </b>Bachelor of Science in Mathematics
                 </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                    <li>None</li>                   
-                  </ul>
-                  </p>
-
-                </ul>
               </div>
             </div>
 
@@ -686,6 +741,107 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section scrollspy">
+      <h3 class="page-title reveal">Leadership & Community</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l6 reveal">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="#!" class="teal-text hoverline">Executive Leadership</a></span>
+                </p>
+                <p class="brown-text">University of Lagos</p>
+                <ul>
+                  <li>Vice President, Department of Mathematics Student Association.</li>
+                  <li>Vice President, NAMSSN UNILAG Chapter.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 reveal">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="#!" class="teal-text hoverline">Event Management</a></span>
+                </p>
+                <p class="brown-text">Decagon 5.0 Calculus Competition</p>
+                <ul>
+                  <li>Spearheaded one of the largest academic events in the faculty.</li>
+                  <li>Managed sponsorship, PR, and logistics teams to ensure a successful event.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 l12 reveal">
+            <div class="card">
+              <div class="card-content">
+                <p>
+                  <span class="card-title"><a href="#!" class="teal-text hoverline">Mentorship</a></span>
+                </p>
+                <p class="brown-text">Community Initiative</p>
+                <ul>
+                  <li>Organized and tutored a backend development program for aspiring developers, focusing on Python and FastAPI.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ninth Section: Certifications -->
+    <section id="certifications" class="section scrollspy">
+      <h3 class="page-title reveal">Certifications</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6 l6 reveal">
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="https://www.freecodecamp.org/certification/Mcdonald/responsive-web-design" target="_blank" class="teal-text hoverline">Responsive Web Design</a></span></p>
+                <p class="brown-text">freeCodeCamp</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 l6 reveal">
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="https://www.hackerrank.com/certificates/615391f3afc7" target="_blank" class="teal-text hoverline">Python (Basic)</a></span></p>
+                <p class="brown-text">HackerRank</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Writing Section -->
+    <section id="writing" class="section scrollspy">
+      <h3 class="page-title reveal">Technical Writing</h3>
+      <div class="container">
+        <p class="flow-text reveal">
+          I enjoy sharing my knowledge and experiences with the developer community through technical articles. You can find my work on platforms like Medium.
+        </p>
+        <div class="row">
+          <!-- Example Article Card -->
+          <div class="col s12 m6 l6 reveal">
+            <div class="card">
+              <div class="card-content">
+                <p><span class="card-title"><a href="[YOUR_ARTICLE_LINK]" target="_blank" class="teal-text hoverline">[Article Title]</a></span></p>
+                <p class="brown-text">Published on Medium</p>
+                <p>A brief description of the article and what readers can learn from it.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more article cards here -->
+        </div>
+        <p class="flow-text reveal">
+          <a href="[YOUR_MEDIUM_PROFILE_LINK]" target="_blank" class="readme">View All Articles on Medium</a>
+        </p>
       </div>
     </section>
 
