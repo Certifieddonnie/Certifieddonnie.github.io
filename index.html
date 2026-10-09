@@ -62,32 +62,19 @@
       color: var(--text-heading);
     }
 
-    /* =========================================
-       THRILLING SIDEBAR ENHANCEMENTS
+/* =========================================
+       THRILLING SIDEBAR ENHANCEMENTS (Split Contrast)
        ========================================= */
     .sidenav, .side-nav {
-      background-color: var(--nav-bg) !important;
+      background-color: #ffffff !important; /* Bright white upper sidebar */
       border-right: 1px solid var(--border-color);
-      
-      /* Animated Cyber Grid Background */
-      background-image: 
-        linear-gradient(rgba(20, 184, 166, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(20, 184, 166, 0.04) 1px, transparent 1px);
-      background-size: 25px 25px;
-      animation: panGrid 20s linear infinite;
-      
       display: flex;
       flex-direction: column;
-    }
-
-    @keyframes panGrid {
-      0% { background-position: 0 0; }
-      100% { background-position: 25px 25px; }
     }
     
     .side-nav .logo-wrapper {
       padding: 40px 0 20px 0;
-      border-bottom: 1px solid var(--border-color);
+      border-bottom: 1px solid #e2e8f0; /* Light gray border for white bg */
       margin-bottom: 10px;
       position: relative;
     }
@@ -96,7 +83,7 @@
       font-family: 'Fira Code', monospace;
       font-size: 28px;
       font-weight: 600;
-      color: var(--accent-color);
+      color: var(--accent-hover); /* Darker teal for better contrast on white */
       text-decoration: none;
       letter-spacing: -1px;
       display: inline-block;
@@ -106,8 +93,8 @@
     /* Glitch Effect on Hover for Logo */
     .code-logo:hover {
       animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
-      color: #fff;
-      text-shadow: 0 0 8px var(--accent-color), -2px 0 red, 2px 0 blue;
+      color: var(--nav-bg);
+      text-shadow: 0 0 8px rgba(20, 184, 166, 0.5), -2px 0 red, 2px 0 blue;
     }
 
     @keyframes glitch {
@@ -119,11 +106,11 @@
       100% { transform: translate(0) }
     }
 
-    /* Interactive Link Hover Effects */
+/* Interactive Link Hover Effects (For White Background) */
     .side-nav li { margin: 0; padding: 0; }
     .side-nav li>a {
-      color: var(--text-main) !important;
-      font-weight: 500;
+      color: #334155 !important; /* Dark slate text for white background */
+      font-weight: 600;
       display: flex;
       align-items: center;
       height: 54px;
@@ -140,7 +127,6 @@
       transition: left 0.5s ease; z-index: -1;
     }
 
-    /* The Text & Icon container for the sliding effect */
     .nav-item-content {
       display: flex;
       align-items: center;
@@ -150,25 +136,32 @@
     .side-nav li>a:hover::before { left: 100%; }
     
     .side-nav li>a:hover, .side-nav li.active>a {
-      color: var(--accent-color) !important;
+      color: var(--accent-hover) !important;
       background-color: rgba(20, 184, 166, 0.05) !important;
-      border-right: 3px solid var(--accent-color);
+      border-right: 3px solid var(--accent-hover);
     }
     
     .side-nav li>a:hover .nav-item-content, .side-nav li.active>a .nav-item-content {
-      transform: translateX(12px); /* Text slides forward dynamically */
+      transform: translateX(12px); 
     }
 
-    .side-nav li>a>div>i { color: var(--text-main) !important; margin-right: 15px; transition: color 0.3s; }
-    .side-nav li>a:hover>div>i { color: var(--accent-color) !important; }
-
-/* Fake System Monitor Widget */
+    .side-nav li>a>div>i { color: #64748b !important; margin-right: 15px; transition: color 0.3s; }
+    .side-nav li>a:hover>div>i { color: var(--accent-hover) !important; }
+    /* Fake System Monitor Widget */
     .sys-status {
       margin-top: auto; 
       padding: 25px 20px;
-      border-top: 1px solid var(--border-color);
-      background-color: var(--nav-bg) !important; /* Forces the deep dark navy background */
-      box-shadow: inset 0px 10px 20px -10px rgba(20, 184, 166, 0.1); 
+      border-top: 3px solid var(--accent-color); /* Thick teal border separating white from navy */
+      background-color: var(--nav-bg) !important; 
+      
+      /* Animated Cyber Grid Background moved here */
+      background-image: 
+        linear-gradient(rgba(20, 184, 166, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(20, 184, 166, 0.08) 1px, transparent 1px);
+      background-size: 20px 20px;
+      animation: panGrid 20s linear infinite;
+
+      box-shadow: inset 0px 10px 20px -10px rgba(0, 0, 0, 0.5); 
       line-height: normal !important; 
     }
     .status-header { 
@@ -188,12 +181,8 @@
       font-family: 'Fira Code', monospace; 
       font-size: 11px; 
     }
-    .status-row span { 
-      color: #8892B0 !important; 
-    } 
-    .status-row .status-val { 
-      color: #e2e8f0 !important; 
-    }
+    .status-row span { color: #8892B0 !important; } 
+    .status-row .status-val { color: #e2e8f0 !important; }
     .status-indicator { 
       margin-top: 15px; 
       display: flex; 
