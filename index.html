@@ -65,8 +65,8 @@
     /* =========================================
        THRILLING SIDEBAR ENHANCEMENTS
        ========================================= */
-    .side-nav {
-      background-color: var(--nav-bg);
+    .sidenav, .side-nav {
+      background-color: var(--nav-bg) !important;
       border-right: 1px solid var(--border-color);
       
       /* Animated Cyber Grid Background */
@@ -164,12 +164,12 @@
 
 /* Fake System Monitor Widget */
     .sys-status {
-      margin-top: auto; /* Pushes it to the bottom */
+      margin-top: auto; 
       padding: 25px 20px;
       border-top: 1px solid var(--border-color);
-      background: transparent; 
-      box-shadow: inset 0px 10px 20px -10px rgba(20, 184, 166, 0.05); 
-      line-height: normal !important; /* Overrides Materialize 48px height */
+      background-color: var(--nav-bg) !important; /* Forces the deep dark navy background */
+      box-shadow: inset 0px 10px 20px -10px rgba(20, 184, 166, 0.1); 
+      line-height: normal !important; 
     }
     .status-header { 
       color: var(--accent-color) !important; 
@@ -189,10 +189,10 @@
       font-size: 11px; 
     }
     .status-row span { 
-      color: #8892B0 !important; /* Forces the Slate text color */
+      color: #8892B0 !important; 
     } 
     .status-row .status-val { 
-      color: #e2e8f0 !important; /* Forces the bright white text color */
+      color: #e2e8f0 !important; 
     }
     .status-indicator { 
       margin-top: 15px; 
