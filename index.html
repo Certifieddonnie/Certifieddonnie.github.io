@@ -162,28 +162,53 @@
     .side-nav li>a>div>i { color: var(--text-main) !important; margin-right: 15px; transition: color 0.3s; }
     .side-nav li>a:hover>div>i { color: var(--accent-color) !important; }
 
-    /* Fake System Monitor Widget */
+/* Fake System Monitor Widget */
     .sys-status {
-      margin-top: auto; /* Pushes it to the very bottom naturally */
+      margin-top: auto; /* Pushes it to the bottom */
       padding: 25px 20px;
       border-top: 1px solid var(--border-color);
-      font-family: 'Fira Code', monospace;
-      font-size: 11px;
-      color: var(--text-main);
-      background: transparent; /* Removes the grey block */
-      box-shadow: inset 0px 10px 20px -10px rgba(20, 184, 166, 0.05); /* Subtle teal inner glow */
+      background: transparent; 
+      box-shadow: inset 0px 10px 20px -10px rgba(20, 184, 166, 0.05); 
+      line-height: normal !important; /* Overrides Materialize 48px height */
     }
-
-    .status-header { color: var(--accent-color); margin-bottom: 12px; font-weight: 600; letter-spacing: 1px;}
-    .status-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
-    .status-val { color: #e2e8f0; }
-    .status-indicator { margin-top: 15px; display: flex; align-items: center; color: #27c93f; font-weight: bold;}
+    .status-header { 
+      color: var(--accent-color) !important; 
+      margin-bottom: 12px; 
+      font-weight: 600; 
+      letter-spacing: 1px;
+      font-family: 'Fira Code', monospace; 
+      font-size: 12px; 
+      line-height: 1.2 !important;
+    }
+    .status-row { 
+      display: flex; 
+      justify-content: space-between; 
+      margin-bottom: 8px; 
+      line-height: 1.2 !important; 
+      font-family: 'Fira Code', monospace; 
+      font-size: 11px; 
+    }
+    .status-row span { 
+      color: #8892B0 !important; /* Forces the Slate text color */
+    } 
+    .status-row .status-val { 
+      color: #e2e8f0 !important; /* Forces the bright white text color */
+    }
+    .status-indicator { 
+      margin-top: 15px; 
+      display: flex; 
+      align-items: center; 
+      color: #27c93f !important; 
+      font-weight: bold; 
+      line-height: 1.2 !important; 
+      font-family: 'Fira Code', monospace; 
+      font-size: 11px; 
+    }
     .blink-dot { 
       width: 8px; height: 8px; background: #27c93f; border-radius: 50%; 
       margin-right: 8px; animation: blinker 1.5s linear infinite; box-shadow: 0 0 8px #27c93f; 
     }
     @keyframes blinker { 50% { opacity: 0.2; } }
-
 
     /* =========================================
        HERO PROFILE PICTURE 
