@@ -164,14 +164,16 @@
 
     /* Fake System Monitor Widget */
     .sys-status {
-      margin-top: 40px;
-      padding: 20px;
+      margin-top: auto; /* Pushes it to the very bottom naturally */
+      padding: 25px 20px;
       border-top: 1px solid var(--border-color);
       font-family: 'Fira Code', monospace;
       font-size: 11px;
       color: var(--text-main);
-      background: rgba(0,0,0,0.2);
+      background: transparent; /* Removes the grey block */
+      box-shadow: inset 0px 10px 20px -10px rgba(20, 184, 166, 0.05); /* Subtle teal inner glow */
     }
+
     .status-header { color: var(--accent-color); margin-bottom: 12px; font-weight: 600; letter-spacing: 1px;}
     .status-row { display: flex; justify-content: space-between; margin-bottom: 6px; }
     .status-val { color: #e2e8f0; }
